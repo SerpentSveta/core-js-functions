@@ -1,24 +1,24 @@
 module.exports = [
   {
-    ignores: ["node_modules/"],
+    ignores: ['node_modules/'],
   },
   {
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "commonjs",
+      ecmaVersion: 'latest',
+      sourceType: 'commonjs',
       globals: {
-        Atomics: "readonly",
-        SharedArrayBuffer: "readonly",
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly',
       },
     },
     linterOptions: {
       noInlineConfig: true,
     },
     plugins: {
-      prettier: require("eslint-plugin-prettier"),
+      prettier: require('eslint-plugin-prettier'),
     },
     rules: {
-      "prettier/prettier": "error",
+      'prettier/prettier': 'error',
     },
   },
 ];
